@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="app.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
     <title>User Graph</title>
   </head>
   <body>
     <div class="app-container">
-      <div class="container">
+      <div>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
           maiores, rerum iusto numquam dicta a fugiat necessitatibus in
@@ -30,9 +31,11 @@
           Nihil, doloribus. Eveniet harum tempora suscipit.
         </p>
       </div>
-      <div class="container"></div>
-      <button>Pobierz dane</button>
-      <div class="container">
+      <div>
+        <canvas id="age_graph"></canvas>
+      </div>
+      <button id="load_users">Pobierz dane</button>
+      <div id="colored">
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
           maiores, rerum iusto numquam dicta a fugiat necessitatibus in
@@ -62,5 +65,8 @@
         </p>
       </div>
     </div>
+
+    <script src="app.js"></script>
+    <script src="load_users.js"></script>
   </body>
 </html>
