@@ -31,10 +31,29 @@
           Nihil, doloribus. Eveniet harum tempora suscipit.
         </p>
       </div>
-      <div>
+      <div class="placeholder">
+        <div class="loading__wrapper">
+          <div class="loading__element"></div>
+        </div>
+
         <canvas id="age_graph"></canvas>
+        <div class="table-wrapper">
+          <table id="user_table">
+            <caption>
+              10 najstarszych użytkowników
+            </caption>
+            <tr>
+              <th>Imię</th>
+              <th>Płeć</th>
+              <th>Kraj</th>
+              <th>Data urodzenia</th>
+            </tr>
+          </table>
+        </div>
       </div>
-      <button id="load_users">Pobierz dane</button>
+      <div class="btn-container">
+        <button class="btn" id="load_users">Pobierz dane</button>
+      </div>
       <div id="colored">
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae

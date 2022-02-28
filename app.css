@@ -1,8 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table caption {
+  padding: 0.5rem 0;
+}
+
+th,
+td {
+  border: 1px solid black;
+  text-align: left;
+  padding: 3px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+p {
+  text-align: justify;
+}
+
+canvas {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+}
+
 .app-container {
   width: min(100% - 2rem, 50rem);
   margin-inline: auto;
 }
 
+.table-wrapper {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+}
+
+.btn-container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.btn {
+  border: none;
+  background-color: hsl(34, 55%, 77%);
+  padding: 0.33em 1.5em;
+}
+
+.btn:hover,
+.btn:focus {
+  cursor: pointer;
+  background-color: hsl(34, 55%, 65%);
+}
+
 .colored-bg {
   background-color: antiquewhite;
+}
+
+.placeholder {
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+}
+
+.loading .loading__wrapper {
+  position: absolute;
+  top: 5rem;
+  left: calc(50% - 1.5rem);
+  width: 4rem;
+  height: 4rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.loading .loading__element {
+  border: 6px solid white;
+  border-top: 6px solid green;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
